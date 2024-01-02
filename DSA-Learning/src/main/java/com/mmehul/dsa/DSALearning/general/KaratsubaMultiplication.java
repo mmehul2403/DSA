@@ -44,12 +44,13 @@ public class KaratsubaMultiplication {
 
     public static void main(String[] args) {
 
-        //Example 1
+        //Example 1 : When n is not power of 2 : n=length of number
         long expectedProduct = 1234 * 567814  ;
         long karatsubaProduct = multiplication(1234,567814);
 
         System.out.println("expectedProduct : "+expectedProduct + ", Karatsuba Result :"+karatsubaProduct);
 
+        //Example 2 : When n is not power of 2 : n=length of number
         expectedProduct = 142536  * 458;
         karatsubaProduct = multiplication(142536 ,458);
         System.out.println("expectedProduct : "+expectedProduct + ", Karatsuba Result :"+karatsubaProduct);
