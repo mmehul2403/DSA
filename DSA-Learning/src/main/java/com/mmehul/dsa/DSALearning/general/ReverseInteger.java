@@ -3,22 +3,24 @@ package com.mmehul.dsa.DSALearning.general;
 public class ReverseInteger {
 
     public static int reverse(int x){
-        long tempReverse=0;
+        int reverseNumber =0;
+        int digit;
 
         while(x !=0){
-            tempReverse = (tempReverse * 10) + x%10;
-            x= x/10;
-            System.out.println("value of x :"+x);
+            digit = x % 10;
+
+            if(reverseNumber >= Integer.MIN_VALUE/10 && reverseNumber <= Integer.MAX_VALUE/10){
+                reverseNumber = (reverseNumber * 10) +digit;
+                x= x/10;
+            }else{
+                reverseNumber = 0;
+                break;
+            }
         }
-
-        if (tempReverse > Integer.MAX_VALUE || tempReverse < Integer.MIN_VALUE)
-            return 0;
-        else
-            return (int)tempReverse;
-
+        return reverseNumber;
     }
 
     public static void main(String[] args) {
-        System.out.println(" reverse of -456 is "+reverse(-456));
+        System.out.println(Integer.MAX_VALUE+" reverse is "+reverse(1463847412));
     }
 }
