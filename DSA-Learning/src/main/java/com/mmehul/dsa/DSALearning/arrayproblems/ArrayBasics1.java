@@ -1,5 +1,6 @@
 package com.mmehul.dsa.DSALearning.arrayproblems;
 
+
 /* just basic operations on array assumes array is not sorted :
 * Insert: O(1)
 * Search: O(n)
@@ -54,15 +55,36 @@ public class ArrayBasics1 {
         return true;
     }
 
+    //to perform binary search array should be sorted
+    public boolean binarySearch(int searchVal){
+        int left = 0, right = nElems-1;
+        int mid;
+
+        while(left < right){
+            mid = (left + right) / 2;
+
+            if(searchVal== arr[mid])
+                return true;
+
+            if(arr[mid] < searchVal )
+                left = mid +1;
+            else
+                right = mid -1;
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
         ArrayBasics1 arr = new ArrayBasics1(10);
-        arr.insert(10);
         arr.insert(4);
-        arr.insert(9);
-        arr.insert(16);
-        arr.insert(58);
-        arr.insert(47);
+        arr.insert(5);
+        arr.insert(6);
         arr.insert(7);
+        arr.insert(8);
+        arr.insert(9);
+        arr.insert(10);
+        arr.insert(22);
+        arr.insert(24);
 
         //display array
         arr.display();
@@ -79,6 +101,12 @@ public class ArrayBasics1 {
 
         //display array
         arr.display();
+
+        searchVal = 10;
+        if(arr.binarySearch(searchVal))
+            System.out.println("element found using binary element");
+        else
+            System.out.println("element not fund using binary element");
     }
 
 }
