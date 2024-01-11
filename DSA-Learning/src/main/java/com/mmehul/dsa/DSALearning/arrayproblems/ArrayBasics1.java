@@ -1,5 +1,10 @@
 package com.mmehul.dsa.DSALearning.arrayproblems;
 
+/* just basic operations on array assumes array is not sorted :
+* Insert: O(1)
+* Search: O(n)
+* Delete: O(n) : search through the array : delete element in constant time and shifts remaining array in remaining O(n) times
+*  */
 public class ArrayBasics1 {
 
     private int[] arr;
