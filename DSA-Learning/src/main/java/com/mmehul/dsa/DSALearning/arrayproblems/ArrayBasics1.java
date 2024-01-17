@@ -1,9 +1,9 @@
 package com.mmehul.dsa.DSALearning.arrayproblems;
 
-
 /* just basic operations on array assumes array is not sorted :
 * Insert: O(1)
 * Search: O(n)
+* BinarySearch O(log n)
 * Delete: O(n) : search through the array : delete element in constant time and shifts remaining array in remaining O(n) times
 *  */
 public class ArrayBasics1 {
@@ -108,5 +108,4 @@ public class ArrayBasics1 {
         else
             System.out.println("element not fund using binary element");
     }
-
 }
