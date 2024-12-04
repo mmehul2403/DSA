@@ -1,6 +1,7 @@
 package com.mmehul.dsa.DSALearning.patterns;
 
 /*
+ * 
 **********
 ****  ****
 ***    ***
@@ -11,7 +12,6 @@ package com.mmehul.dsa.DSALearning.patterns;
 ***    ***
 ****  ****
 **********
-
  * 
  * */
 

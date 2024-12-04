@@ -25,6 +25,6 @@ public class Pattern12 {
 
 	public static void main(String[] args) {
 		Pattern12 pattern = new Pattern12();
-		pattern.printPattern(5);
+		pattern.printPattern(26 );
 	}
 }
