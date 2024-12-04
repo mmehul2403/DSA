@@ -1,4 +1,5 @@
 package com.mmehul.dsa.DSALearning.patterns;
+
 /*
  A B C D E
  A B C D
@@ -8,9 +9,9 @@ package com.mmehul.dsa.DSALearning.patterns;
  * */
 public class Pattern10 {
 	public void printPattern(int n) {
-		for(int i=n; i>=1;i--) {
-			for(char c='A';c<'A'+i;c++) {
-				System.out.print(" "+c);
+		for (int i = n; i >= 1; i--) {
+			for (char c = 'A'; c < 'A' + i; c++) {
+				System.out.print(" " + c);
 			}
 			System.out.println();
 		}
