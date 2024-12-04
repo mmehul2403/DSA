@@ -43,6 +43,6 @@ public class Pattern11 {
 
 	public static void main(String[] args) {
 		Pattern11 Pattern = new Pattern11();
-		Pattern.printPattern(15);
+		Pattern.printPattern(5);
 	}
 }
